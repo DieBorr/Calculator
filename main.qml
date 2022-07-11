@@ -156,7 +156,6 @@ Window {
         Calculator {
             id: calculator
         }
-
         Button {
             id: equal_button
             anchors.left : add_button.right
@@ -171,7 +170,6 @@ Window {
                     if(!root.operation_numPress) {
                         display_value = display_value
                         root.operation_numPress = false
-
                     }
                     else if(root.operation_addPress){
                         root.display_value = calculator.addOperation(display_value)
